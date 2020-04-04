@@ -1,0 +1,222 @@
+/*PORTFOLIO STYLES
+
+Color Palette: https://coolors.co/aafac8-297373-86cd82-e6e6e6-39393a
+Magic Mint: #aafac8
+Mrytle Green: #297373
+Pistachio: #86cd82
+Platinum: #e6e6e6
+Onyx: #39393a
+
+
+
+*******************************************************/
+
+
+
+/* GLOBAL STYLES
+******************************************************/
+body {
+  background-color: #e6e6e6;
+
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2, h3 {
+  font-family: 'Kanit', sans-serif;
+}
+
+p, li, a {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrap {
+  line-height: 0.7;
+}
+
+a{
+
+  color: #598956;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration-style: solid;
+  text-decoration-color: #598956;
+  color: #598956;
+}
+
+
+
+
+
+
+/* ABOUT
+*****************************************************/
+header {
+  background-color: #39393a;
+  color: #e6e6e6;
+  margin: auto;
+  padding-bottom: 50px;
+
+}
+
+header .title h1 {
+  font-size: 5rem;
+  border-bottom: double;
+}
+
+header .title h2 {
+  font-size: 2rem;
+}
+
+header .container {
+  padding-top: 30px;
+}
+
+
+
+
+
+/* EDUCATION
+******************************************************/
+#education {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+#education .container {
+  padding-top: 30px;
+}
+
+
+/* SKILLS
+******************************************************/
+#skills {
+  background-color: #86cd82;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#skills .container {
+  padding-top: 30px;
+}
+
+
+/* PROJECTS
+******************************************************/
+#projects {
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#projects .container {
+  padding-top: 30px;
+}
+
+
+
+/* WORK EXPEPRIENCE
+*****************************************************/
+#work-exp {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+#work-exp .container {
+  padding-top: 30px;
+}
+.work {
+  background-color: #8cd790;
+}
+
+.work, .volunteer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+
+.work a{
+  color: #d7fff1;
+  text-decoration: none;
+}
+
+#.work a:hover{
+  text-decoration: solid;
+  text-decoration-color: #d7fff1;
+  color: #d7fff1;
+
+}
+
+/* CONTACT
+*****************************************************/
+footer {
+  background-color: #39393a;
+  color: #e6e6e6;
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+}
+
+footer .container {
+  padding: 50px;
+
+}
+
+/* RESPONSIVE STYLES
+******************************************************/
+
+@media screen and (min-width: 992px) {
+
+  header p {
+    width: 50%;
+
+  }
+
+  header .first {
+    border-right: solid;
+    padding-right: 25px;
+  }
+
+  header .second {
+    padding-left: 25px;
+  }
+
+  #education .school{
+    width: 50%;
+    align-self: center;
+  }
+
+  #education .degree {
+    width: 50%;
+    border-left: solid;
+    padding-left: 50px;
+  }
+
+
+  .work ul {
+    list-style-type: none;
+  }
+
+  .work li {
+    padding: 10px;
+  }
+  .work .company {
+    width: 50%;
+    align-self: center;
+
+  }
+  .work .work-description {
+    width: 50%;
+    border-left: solid;
+  }
+
+}
+
+@media screen and (min-width: 768px)

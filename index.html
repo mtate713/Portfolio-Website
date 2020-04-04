@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Marcus Tate - Software Developer, Cloud Engineer, Music Producer</title>
   </head>
   <body>
@@ -13,15 +15,15 @@
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
         <section id = "home">
-          <div class = "title text-center">
+          <div class = "title text-center container">
             <h1>Marcus Tate</h1>
             <h2>Software Developer | Cloud Engineer | Music Producer</h2>
           </div>
 
-          <div class="container" >
-            <p>As a developer, I specialize in full-stack development, creating modular and scalable front-end and back-end architectures, and embedded software development, creating automation systems from bare-metal microprocessors. As an engineer, I focus on designing cloud infrastucture that can host and monitor applications and data over time using DevOps procedures and practices.</p>
+          <div class="container d-lg-flex flex-row" >
+            <p class = "first">As a developer, I specialize in full-stack development, creating modular and scalable front-end and back-end architectures, and embedded software development, creating automation systems from bare-metal microprocessors. As an engineer, I focus on designing cloud infrastucture that can host and monitor applications and data over time using DevOps procedures and practices.</p>
 
-            <p>As a music producer, I strive to combine many different genres of music, such as classical, jazz, techno, and hip hop/rap, to create innovative and creative songs and compositions. I am also interested in combining electronics and software development with music to create new analog and digital music instruments.</p>
+            <p class = "second">As a music producer, I strive to combine many different genres of music, such as classical, jazz, techno, and hip hop/rap, to create innovative and creative songs and compositions. I am also interested in combining electronics and software development with music to create new analog and digital music instruments.</p>
           </div>
         </section>
       </header>
@@ -32,30 +34,42 @@
           <div class = "content-wrap">
             <h2 class = "text-center">Education</h2>
 
-            <section class= "container">
-                <h3>Rhodes College - Memphis, TN</h3>
-                <p>Class of 2019, Graduated May 2019</p>
-                <p><i>Bachelor of Science in Computer Science</i></p>
-                <p><i>Bachelor of Art in Music</i>, Concentration in Composition </p>
-                <p>Leadership & Activities:</p>
-                <ul>
-                  <li>Rhodes Singers and Chamber Singers - Treasurer</li>
-                  <li>Rhodes Audio-Visual Club - President</li>
-                  <li>Mike Curb Institute - Audio Team Leader and Institute Student Leader</li>
-                  <li>Mu Phi Epsilon - Treasurer and Chapter-Founding Member</li>
-                </ul>
+            <section class= "container d-lg-flex flex-lg-row">
+                <div class= "school wrap">
+                  <h3 class= "h4">Rhodes College - Memphis, TN</h3>
+                  <p>Class of 2019, Graduated May 2019</p>
+                </div>
+
+                <div class= "degree">
+                  <p><i>Bachelor of Science in Computer Science</i></p>
+                  <p><i>Bachelor of Art in Music</i>, Concentration in Composition </p>
+                  <p>Leadership & Activities:</p>
+                  <ul>
+                    <li>Rhodes Singers and Chamber Singers - Treasurer</li>
+                    <li>Rhodes Audio-Visual Club - President</li>
+                    <li>Mike Curb Institute - Audio Team Leader and Institute Student Leader</li>
+                    <li>Mu Phi Epsilon - Treasurer and Chapter-Founding Member</li>
+                  </ul>
+                </div>
+
             </section>
 
-            <section class= "container">
-                <h3>Central High School - Memphis, TN</h3>
-                <p>Class of 2015, Graduated May 2015</p>
-                <p><i>High School Diploma</i>, Magna Cum Laude</p>
-                <p>Leadership & Activities:</p>
-                <ul>
-                  <li>Central High Chorus, Show Choir, Concert Choir, Men's Chorus</li>
-                  <li>Debate Club</li>
-                  <li>Math Club</li>
-                </ul>
+            <section class= "container d-lg-flex flex-lg-row">
+                <div class= "school wrap">
+                  <h3 class= "h4">Central High School - Memphis, TN</h3>
+                  <p>Class of 2015, Graduated May 2015</p>
+                </div>
+
+                <div class= "degree">
+                  <p><i>High School Diploma</i>, Magna Cum Laude</p>
+                  <p>Leadership & Activities:</p>
+                  <ul>
+                    <li>Central High Chorus, Show Choir, Concert Choir, Men's Chorus</li>
+                    <li>Debate Club</li>
+                    <li>Math Club</li>
+                  </ul>
+                </div>
+
             </section>
 
           </div>
@@ -99,26 +113,26 @@
                <!-- Project 1 -->
                <section class= "container">
                  <h3>Memphis Electronic Music: Finding Soul in the Age of Lifeless Machines</h3>
-                 <p class= "sub">Rhodes Institute for Regional Studies - Summer 2018</p>
+                 <p>Rhodes Institute for Regional Studies - Summer 2018</p>
                  <p>This project consists of two parts: researching the relationship between Memphis and Electronic Music and building an prototype analog synthesizer from bare-metal and software. This project also explores how electronics are used as tools for creating art and how Memphians use electronics to create their own unique sound.</p>
-                 <a href="http://dlynx.rhodes.edu/jspui/handle/10267/33993" target="_blank" class= "myButton"> Project Archive</a>
+                 <a class="btn btn-success" href="http://dlynx.rhodes.edu/jspui/handle/10267/33993" target="_blank" class= "myButton"> Project Archive</a>
 
                </section>
 
                <!-- Project 2 -->
                <section class= "container">
                  <h3>Building MIDI Instruments </h3>
-                 <p class="sub">Rhodes College Research Symposium - April 2019 [Group Presentation - Project Leader]</p>
+                 <p>Rhodes College Research Symposium - April 2019 [Group Presentation - Project Leader]</p>
                  <p>Many people have a passion for music, whether it’s producing music or performing music. However, a large number of people are unable to express their passion for music, mainly because the cost of owning an instrument and getting lessons for that instrument is prohibitive. Therefore, we propose a solution using programming and electronics. Our project involves taking a guitar controller from the video game, Rock Band 4, and reprogramming it to become a MIDI instrument using an Arduino microprocessor.</p>
-                 <a href="https://www.rhodes.edu/sites/default/files/Rhodes%20Symposium%202019%20Program%20Final%20w%20errata%204.23.19.pdf#page=41" target="_blank" class= "myButton"> Rhodes College Research Symposium Catalogue 2019</a>
+                 <a class="btn btn-success" href="https://www.rhodes.edu/sites/default/files/Rhodes%20Symposium%202019%20Program%20Final%20w%20errata%204.23.19.pdf#page=41" target="_blank" class= "myButton"> Rhodes College Research Symposium Catalogue 2019</a>
                </section>
 
                <!-- Project 3 -->
                <section class= "container">
                  <h3>Crosstown Arts Residency</h3>
-                 <p class = "sub">Crosstown Concourse - Memphis, TN - Summer 2019</p>
+                 <p>Crosstown Concourse - Memphis, TN - Summer 2019</p>
                  <p>This residency mainly involved creating music compositions and improving upon the prototype of the analog synthesiser. It also featured a "Pecha Kucha" presentation that goes over my main philosophies as I create music.</p>
-                 <a href="https://crosstownarts.org/residency/resident-artists/marcus-tate/" target="_blank" class= "myButton">Resident Profile</a>
+                 <a class="btn btn-success" href="https://crosstownarts.org/residency/resident-artists/marcus-tate/" target="_blank" class= "myButton">Resident Profile</a>
                </section>
              </div>
            </section>
@@ -131,9 +145,9 @@
                <p class = "text-center"><i>See my complete work history on</i> <a href="https://www.linkedin.com/in/marcus-tate-a8b593113/" target="_blank" >LinkedIn</a>.</p>
 
                <!-- Job 1 -->
-               <section class= "container">
-                 <div class = "company">
-                   <h3>Installation Technician - Contract</h3>
+               <section class= "container d-lg-flex flex-lg-row">
+                 <div class = "company wrap">
+                   <h3 class = "h4">Installation Technician - Contract</h3>
                    <p>Phoenix Communications - Memphis, TN</p>
                    <p>May 2019 - November 2019</p>
                  </div>
@@ -148,9 +162,9 @@
                </section>
 
                <!-- Job 2 -->
-               <section class= "container">
-                 <div class = "company">
-                   <h3>Technical Manager - Mike Curb Institute Fellowship</h3>
+               <section class= "container d-lg-flex flex-lg-row">
+                 <div class = "company wrap">
+                   <h3 class = "h4">Technical Manager - Mike Curb Institute Fellowship</h3>
                    <p>Rhodes College - Memphis, TN </p>
                    <p>August 2018 - May 2019</p>
                  </div>
@@ -166,17 +180,17 @@
                </section>
 
                <!-- Job 3 -->
-               <section class= "container">
-                 <div class = "company">
-                   <h3>Research Assistant - Internship</h3>
+               <section class= "container d-lg-flex flex-lg-row">
+                 <div class = "company wrap">
+                   <h3 class = "h4">Research Assistant - Internship</h3>
                    <p>Rhodes College - Memphis, TN </p>
-                   <p class="sub">June 2017 - August 2017</p>
+                   <p>June 2017 - August 2017</p>
                  </div>
 
                  <div class = "work-description">
                    <ul>
                      <li>Assist Rhodes College Computer Science faculty with research and experimentation in the field of virtual reality.</li>
-                     <li>Create virtual spaces and objects in Unity and implement computer graphics functions in C# using Visual Studio</li>
+                     <li>Create virtual spaces and objects in Unity and implement computer graphics functions in C# using Visual Studio.</li>
                      <li>Implement virtual avatars and multiplayer communication functions in C# using Unity and Visual Studio.</li>
                    </ul>
                  </div>
@@ -187,20 +201,20 @@
                <h2 class = "text-center">Volunteer Experience</h2>
                <!-- Job 1 -->
                <section class= "container">
-                 <div class = "company">
+                 <div class = "company wrap">
                    <h3>Stage Manager & Live Sound Technician</h3>
                    <p>SpringBoard Festival - Memphis, TN</p>
                    <p>May 2019 - June 2019</p>
                  </div>
                  <div class= "work-description">
                    <p>Worked as a live sound technician for various concert performances and panel talks for the <i>SpringBoard Music</i> festival at Visible Music College. Managed performances at different venues on Beale Street. </p>
-                   <a href= "https://springboardmemphis.com/" target="_blank">SpringBoard Memphis 2019 Website</a>
+                   <a class="btn btn-success" href= "https://springboardmemphis.com/" target="_blank">SpringBoard Memphis 2019 Website</a>
                  </div>
                </section>
 
                <!-- Job 1 -->
                <section class= "container">
-                 <div class= "company">
+                 <div class= "company wrap">
                    <h3>Live Sound Engineer & Sound Designer</h3>
                    <p>Rhodes College - Memphis, TN</p>
                    <p>Feburary 2017 - Feburary 2019</p>
@@ -222,15 +236,16 @@
                 <h2 class = "text-center">Contact & Social Media</h2>
                 <section class= "container">
                   <!-- Social media and contact links. Add or remove any networks. -->
-                  <p><a href="mailto:mtate713@live.com">Email</a></p>
-                  <p><a href="https://www.linkedin.com/in/marcus-tate-a8b593113/" target="_blank">LinkedIn</a></p>
+                  <ul class= "nav nav-pills nav-justified">
+                    <li class= "nav-item"><a class= "nav-link" href="mailto:mtate713@live.com">Email</a></li>
+                    <li class= "nav-item"><a class= "nav-link" href="https://www.linkedin.com/in/marcus-tate-a8b593113/" target="_blank">LinkedIn</a></li>
+                  </ul>
                 </section>
             </div>
         </section>
       </footer>
-
     </main>
-    <!-- ***************************** SCRIPTS ***************************** -->\
+    <!-- ***************************** SCRIPTS ***************************** -->
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
