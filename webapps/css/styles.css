@@ -1,0 +1,215 @@
+/*
+Project Website Styles Sheet
+
+*/
+
+/* Global Styles
+*********************************************/
+body {
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+
+
+.card {
+    max-width: 525px;
+    max-height: 236px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+
+}
+
+/* Animations
+*******************************************/
+@keyframes startup {
+  0%   {opacity: 0; transform: translate(0px,100px);}
+  25%  {opacity: 0.25;}
+  50%  {opacity: 0.5; }
+  75%  {opacity: 0.75;}
+  100% {opacity: 1;}
+}
+
+.startup-ani{
+    opacity: 0;
+    position: relative;
+    animation-name: startup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+
+
+/* Header
+*********************************************/
+header {
+    background-color: #39393a;
+    color: #e6e6e6;
+    padding: 10px;
+
+}
+
+header h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    width: 65%;
+    margin: 0;
+    padding-left: 20px;
+}
+
+header nav {
+    display: inline;
+    width: 35%;
+}
+
+header ul {
+    padding: 0;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+header li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+
+
+header li:hover a{
+    color: black;
+    text-decoration: none;
+}
+
+header li:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Project List Container
+*****************************************/
+.project-list {
+    padding-top: 25px;
+}
+
+.project-list h2 {
+    padding-bottom: 25px;
+}
+
+
+
+/* Project Item
+******************************************/
+
+.card .link-box {
+    border-top: solid thin;
+    width: 100%;
+
+}
+
+.card a {
+    text-align: center;
+    width: 50%;
+    padding: 15px 15px;
+    color: white;
+}
+
+.card a:hover {
+    background-color: white;
+    color: green;
+    text-decoration: none;
+}
+
+
+
+/* Responsive Styles
+*********************************************/
+@media screen and (max-width: 992px) {
+     header {
+        padding-bottom: 1px;
+        align-items: center;
+    }
+
+    header h1 {
+        padding-left: 0px;
+        padding-top: 10px;
+        width: 100%;
+        text-align: center;
+        border-bottom: solid;
+        border-bottom-width: thin;
+
+    }
+
+    header li {
+        padding: 15px 0px 15px 0px;
+        font-size: 1.25rem;
+
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .card a {
+        padding: 14px 15px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 577px){
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        max-height: 225px;
+
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    header h1{
+        font-size: 2.5rem;
+    }
+    header li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .project-list h2 {
+        padding-bottom: 10px
+    }
+
+    .project-list h2{
+        font-size: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+
+    }
+
+    .card {
+        max-width: 300px;
+        max-height: 165px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.65rem;
+    }
+
+    .card a {
+        padding: 7px;
+    }
+
+}

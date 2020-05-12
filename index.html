@@ -26,7 +26,39 @@
             <p class = "second">As a music producer, I strive to combine many different genres of music, such as classical, jazz, techno, and hip hop/rap, to create innovative and creative songs and compositions. I am also interested in combining electronics and software development with music to create new analog and digital music instruments.</p>
           </div>
         </section>
+
+        <nav class="fixed-top">
+          <div class="dropdown">
+            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg class="bi bi-list" width="2em" height="2em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#home">Home</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#education">Education</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#skills">Skills</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#projects">Projects</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#work-exp">Work Experience</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#vol-exp">Volunteer Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#contact">Contact Info</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://bit.ly/2yXC9Mp" target="_blank">Resume</a>
+            </div>
+          </div>
+        </nav>
+
+
+
       </header>
+
+
 
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
@@ -108,14 +140,14 @@
       <section id= "projects">
              <div class="content-wrap">
                <h2 class= "text-center">Featured Projects</h2>
-
+                <!--<p class = "text-center"><i>View my web application projects at </i> <a href="webapps/index.html" target="_blank" >WebApps</a>.</p> -->
 
                <!-- Project 1 -->
                <section class= "container">
                  <h3>Memphis Electronic Music: Finding Soul in the Age of Lifeless Machines</h3>
                  <p>Rhodes Institute for Regional Studies - Summer 2018</p>
                  <p>This project consists of two parts: researching the relationship between Memphis and Electronic Music and building an prototype analog synthesizer from bare-metal and software. This project also explores how electronics are used as tools for creating art and how Memphians use electronics to create their own unique sound.</p>
-                 <a class="btn btn-success" href="http://dlynx.rhodes.edu/jspui/handle/10267/33993" target="_blank" class= "myButton"> Project Archive</a>
+                 <a class="btn btn-success" href="https://dlynx.rhodes.edu/jspui/handle/10267/33993" target="_blank" class= "myButton"> Project Archive</a>
 
                </section>
 
@@ -139,10 +171,10 @@
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section id= "work-exp">
-        <div class="content-wrap">
-          <div class = "work">
+        <div class="work-exp">
+          <div class = "content-wrap work">
                <h2 class = "text-center">Work Experience</h2>
-               <p class = "text-center"><i>See my complete work history on</i> <a href="https://www.linkedin.com/in/marcus-tate-a8b593113/" target="_blank" >LinkedIn</a>.</p>
+               <p class = "text-center"><i>See my complete work history on </i> <a href="https://www.linkedin.com/in/marcus-tate/" target="_blank" >LinkedIn</a>.</p>
 
                <!-- Job 1 -->
                <section class= "container d-lg-flex flex-lg-row">
@@ -197,8 +229,8 @@
 
                </section>
           </div>
-          <div class = "volunteer">
-               <h2 class = "text-center">Volunteer Experience</h2>
+          <div id="vol-exp" class = "volunteer content-wrap">
+               <h2 class = "text-center">Volunteer Work</h2>
                <!-- Job 1 -->
                <section class= "container">
                  <div class = "company wrap">
@@ -233,12 +265,13 @@
       <footer>
         <section id= "contact">
             <div class="content-wrap">
-                <h2 class = "text-center">Contact & Social Media</h2>
+                <h2 class = "text-center">Contact Info</h2>
                 <section class= "container">
                   <!-- Social media and contact links. Add or remove any networks. -->
                   <ul class= "nav nav-pills nav-justified">
-                    <li class= "nav-item"><a class= "nav-link" href="mailto:mtate713@live.com">Email</a></li>
-                    <li class= "nav-item"><a class= "nav-link" href="https://www.linkedin.com/in/marcus-tate-a8b593113/" target="_blank">LinkedIn</a></li>
+                    <li class= "nav-item" style= "transform: rotate(0)"><a class= "nav-link stretched-link" href="mailto:mtate713@live.com" >Email</a></li>
+                    <li class= "nav-item" style= "transform: rotate(0)"><a class= "nav-link stretched-link" href="https://github.com/mtate713" target="_blank">GitHub</a></li>
+                    <li class= "nav-item" style= "transform: rotate(0)"><a class= "nav-link stretched-link" href="https://www.linkedin.com/in/marcus-tate/" target="_blank">LinkedIn</a></li>
                   </ul>
                 </section>
             </div>
@@ -246,8 +279,8 @@
       </footer>
     </main>
     <!-- ***************************** SCRIPTS ***************************** -->
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
 </html>

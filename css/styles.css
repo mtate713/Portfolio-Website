@@ -47,10 +47,35 @@ a:hover {
   color: #598956;
 }
 
+.content-wrap {
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.content-wrap .container {
+  padding-top: 50px;
+}
+
+.dropdown-item .active {
+  background-color: green;
+}
 
 
+.fixed-top{
+  float: left;
+  left: auto;
+  top: 20px;
+  right: 20px;
+}
 
+nav .dropdown .dropdown-menu a:active, nav .dropdown .dropdown-menu a:hover {
+    color: white;
+    background-color : #598956;
+}
 
+nav .dropdown .btn {
+  background-color: #39393a
+}
 
 /* ABOUT
 *****************************************************/
@@ -75,83 +100,52 @@ header .container {
   padding-top: 30px;
 }
 
+header nav {
+  visibility: hidden;
+}
+
 
 
 
 
 /* EDUCATION
 ******************************************************/
-#education {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-}
-
-#education .container {
-  padding-top: 30px;
-}
 
 
 /* SKILLS
 ******************************************************/
 #skills {
   background-color: #86cd82;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
-#skills .container {
-  padding-top: 30px;
 }
 
 
 /* PROJECTS
 ******************************************************/
-#projects {
-
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#projects .container {
-  padding-top: 30px;
-}
 
 
 
 /* WORK EXPEPRIENCE
 *****************************************************/
-#work-exp {
-  padding-top: 50px;
-  padding-bottom: 50px;
 
-}
-
-#work-exp .container {
-  padding-top: 30px;
-}
 .work {
   background-color: #8cd790;
 }
-
-.work, .volunteer {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-
-
 
 .work a{
   color: #d7fff1;
   text-decoration: none;
 }
 
-#.work a:hover{
+.work a:hover{
   text-decoration: solid;
   text-decoration-color: #d7fff1;
   color: #d7fff1;
 
+}
+
+.volunteer {
+    background-color: #e6e6e6;
 }
 
 /* CONTACT
@@ -159,9 +153,12 @@ header .container {
 footer {
   background-color: #39393a;
   color: #e6e6e6;
+
+}
+
+footer .content-wrap {
   padding-top: 50px;
   padding-bottom: 10px;
-
 }
 
 footer .container {
@@ -169,6 +166,15 @@ footer .container {
 
 }
 
+footer .nav-item:hover {
+    background-color: white;
+    color: black;
+}
+
+footer a:hover {
+  color: #598956;
+  text-decoration: none;
+}
 /* RESPONSIVE STYLES
 ******************************************************/
 
@@ -219,4 +225,29 @@ footer .container {
 
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 700px) {
+  header nav {
+    visibility: visible;
+  }
+
+}
+
+@media screen and (max-width: 599px) {
+  header .title h1 {
+    font-size: 3rem;
+  }
+
+  header .title h2, div h2 {
+    font-size: 1.5rem;
+  }
+
+  .h4, h3 {
+    font-size: 1.25rem;
+  }
+
+  a , p , li, a.btn {
+    font-size: 0.75rem;
+  }
+
+
+}
