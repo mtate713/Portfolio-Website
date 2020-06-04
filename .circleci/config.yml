@@ -4,12 +4,10 @@ version: 2.1
 # Orchestrate or schedule a set of jobs
 jobs:
   deploy-job:
-    machine:
-      enabled: true
     steps:
       - add_ssh_keys: 
-        fingerprints:
-            - "2e:59:00:fa:fd:62:4d:4f:1d:9b:bf:5a:7d:35:24:65"
+            fingerprints:
+                - "2e:59:00:fa:fd:62:4d:4f:1d:9b:bf:5a:7d:35:24:65"
       - run: ssh $USER@$SERVER_IP_ADDRESS "CIRCLECI_DEPLOY"
 
 workflows:
