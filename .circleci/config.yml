@@ -10,7 +10,8 @@ jobs:
       - add_ssh_keys: 
             fingerprints:
                 - "2e:59:00:fa:fd:62:4d:4f:1d:9b:bf:5a:7d:35:24:65"
-      - run: ssh $USER@$SERVER_IP_ADDRESS "CIRCLECI_DEPLOY"
+      - run: ssh-add -l
+      - run: ssh -vT $USER@$SERVER_IP_ADDRESS "CIRCLECI_DEPLOY"
 
 workflows:
   version: 2
