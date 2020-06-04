@@ -3,19 +3,20 @@ version: 2.1
 # Use a package of configuration called an orb.
 # Orchestrate or schedule a set of jobs
 jobs:
-  deploy:
+  deploy-job:
     machine:
       enabled: true
     steps:
-      - run:
-        command: |
-          ssh $USER@$SERVER_IP_ADDRESS "CIRCLECI_DEPLOY"
+      - add_ssh_keys: 
+        fingerprints:
+            - $FINGERPRINT
+      - run: ssh $USER@$SERVER_IP_ADDRESS "CIRCLECI_DEPLOY"
 
 workflows:
   version: 2
   website-deploy:
     jobs:
-      - deploy:
+      - deploy-job:
           filters:
             branches:
               only: master
