@@ -4,6 +4,8 @@ version: 2.1
 # Orchestrate or schedule a set of jobs
 jobs:
   deploy-job:
+    machine:
+      enabled: true
     steps:
       - add_ssh_keys: 
             fingerprints:
