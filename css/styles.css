@@ -177,9 +177,25 @@ footer a:hover {
 }
 /* RESPONSIVE STYLES
 ******************************************************/
+@media screen and (min-height: 475px) {
+  nav .dropdown .dropdown-menu a {
+    font-size: 0.75rem;
+  } 
+}
+
+@media screen and (min-width: 700px) and (min-height: 410px) {
+  header nav {
+    visibility: visible;
+  }
+
+}
 
 @media screen and (min-width: 992px) {
-
+  
+  nav .dropdown .dropdown-menu a {
+    font-size: 1rem;
+  } 
+ 
   header p {
     width: 50%;
 
@@ -225,14 +241,10 @@ footer a:hover {
 
 }
 
-@media screen and (min-width: 700px) {
-  header nav {
-    visibility: visible;
-  }
-
-}
 
 @media screen and (max-width: 599px) {
+  
+
   header .title h1 {
     font-size: 3rem;
   }
