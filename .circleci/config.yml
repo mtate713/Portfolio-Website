@@ -10,7 +10,7 @@ jobs:
       - add_ssh_keys: 
             fingerprints:
                 - "6b:0e:cd:f2:32:16:75:48:06:98:a8:a9:36:5c:ae:03"
-      - run: ssh -Tv $USER@$SERVER_IP_ADDRESS "sh /var/www/deploy.sh"
+      - run: ssh -vT $USER@$SERVER_IP_ADDRESS "sh /var/www/deploy.sh"
 
 workflows:
   version: 2
